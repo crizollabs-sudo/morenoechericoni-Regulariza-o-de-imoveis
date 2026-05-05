@@ -1,5 +1,3 @@
-"use client"
-
 import { Scale, Shield, Users } from "lucide-react"
 import { Reveal } from "@/components/ui/reveal"
 

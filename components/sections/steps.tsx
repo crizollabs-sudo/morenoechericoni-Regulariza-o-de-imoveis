@@ -1,5 +1,3 @@
-"use client"
-
 import { ArrowRight } from "lucide-react"
 import { Reveal } from "@/components/ui/reveal"
 
@@ -56,13 +54,13 @@ export function Steps() {
           </p>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#BDAE95]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 bg-[#BDAE95] border border-[#BDAE95]">
           {steps.map((s, i) => (
             <Reveal
               key={i}
               direction="up"
               delay={i * 80}
-              className="bg-[#E8E0D4] p-8 sm:p-9 relative group hover:bg-[#DDD5C5] transition-colors"
+              className="bg-[#E8E0D4] p-8 sm:p-9 relative group border border-[#BDAE95] hover:bg-[#DDD5C5] transition-colors"
             >
               <span className="text-6xl font-black text-[#9A783A]/55 leading-none select-none block mb-4">
                 {s.number}

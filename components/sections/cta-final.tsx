@@ -1,5 +1,3 @@
-"use client"
-
 import { ArrowRight, AlertTriangle } from "lucide-react"
 import Image from "next/image"
 import { Reveal } from "@/components/ui/reveal"

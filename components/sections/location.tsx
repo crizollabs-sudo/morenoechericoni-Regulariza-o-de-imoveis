@@ -1,5 +1,3 @@
-"use client"
-
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react"
 
 const WA_LINK = "https://wa.me/5511990267173?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20especialista%20em%20Direito%20Banc%C3%A1rio."

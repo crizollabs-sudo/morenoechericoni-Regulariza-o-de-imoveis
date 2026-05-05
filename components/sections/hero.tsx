@@ -1,5 +1,3 @@
-"use client"
-
 import { ArrowRight, MapPin, Monitor } from "lucide-react"
 import Image from "next/image"
 import { Reveal } from "@/components/ui/reveal"
@@ -47,7 +45,7 @@ export function Hero() {
 
           {/* Texto */}
           <div className="pt-10 pb-4 lg:py-16">
-            <Reveal direction="down" delay={0}>
+            <Reveal direction="down" delay={0} className="is-visible">
               <div className="flex items-center gap-3 mb-5 min-w-0">
                 <span className="w-6 h-[2px] bg-[#c9a961] flex-shrink-0" />
                 <span className="min-w-0 text-[#9A783A] text-[0.65rem] font-bold uppercase tracking-[0.08em] sm:tracking-[0.2em]">
@@ -56,14 +54,14 @@ export function Hero() {
               </div>
             </Reveal>
 
-            <Reveal direction="up" delay={100}>
+            <Reveal direction="up" delay={100} className="is-visible">
               <h1 className="text-[2.25rem] sm:text-4xl lg:text-[2.75rem] font-black text-[#1A1A1A] leading-[1.15] mb-6">
                 Desconto de consignado{" "}
                 <em className="not-italic text-[#B8944D]">que você não autorizou?</em>
               </h1>
             </Reveal>
 
-            <Reveal direction="up" delay={200}>
+            <Reveal direction="up" delay={200} className="is-visible">
               <p className="text-[#51473D] text-lg leading-relaxed mb-10 max-w-lg">
                 A gente analisa seu extrato e seu contrato. Geralmente tem mais coisa errada do que parece: juros abusivos, refinanciamento que você não assinou, desconto sem autorização.{" "}
                 <span className="text-[#1A1A1A] font-semibold">Se existir, o banco devolve.</span>{" "}
@@ -71,7 +69,7 @@ export function Hero() {
               </p>
             </Reveal>
 
-            <Reveal direction="up" delay={320}>
+            <Reveal direction="up" delay={320} className="is-visible">
               <a
                 href={WA_LINK}
                 target="_blank"
@@ -83,7 +81,7 @@ export function Hero() {
               </a>
             </Reveal>
 
-            <Reveal direction="up" delay={420}>
+            <Reveal direction="up" delay={420} className="is-visible">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 text-sm font-medium text-[#5B5045]">
                 <div className="flex items-center gap-2">
                   <Monitor className="w-4 h-4 text-[#b8944d]" />
@@ -99,7 +97,7 @@ export function Hero() {
           </div>
 
           {/* Foto */}
-          <Reveal direction="left" delay={150} className="flex w-full min-w-0 justify-center overflow-hidden lg:overflow-visible lg:justify-end">
+          <Reveal direction="left" delay={150} className="is-visible flex w-full min-w-0 justify-center overflow-hidden lg:overflow-visible lg:justify-end">
             <div className="relative flex w-full max-w-[360px] justify-center sm:max-w-[440px] lg:w-auto lg:max-w-none lg:justify-end">
               <Image
                 src="/hero-trabalhista.webp"
