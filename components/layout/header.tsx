@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Menu, X, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
@@ -15,28 +15,60 @@ const navLinks = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [visible, setVisible] = useState(true)
+  const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY
+
+      if (currentY < 80) {
+        // sempre visível no topo
+        setVisible(true)
+      } else if (currentY > lastScrollY.current) {
+        // rolando pra baixo — esconde
+        setVisible(false)
+        setIsOpen(false)
+      } else {
+        // rolando pra cima — mostra
+        setVisible(true)
+      }
+
+      lastScrollY.current = currentY
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f]">
-        <div className="container mx-auto max-w-7xl px-5 h-16 flex items-center justify-between">
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 bg-[#F0EAE0]/95 backdrop-blur-sm border-b border-[#DDD5C5] transition-transform duration-300 ${
+          visible ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <div className="container mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
 
+          {/* Logo */}
           <a href="#" className="flex-shrink-0">
-            <Image
-              src="/logo.webp"
-              alt="Moreno & Chericoni Advogados"
-              width={52}
-              height={52}
-              className="object-contain"
-            />
+            <div className="bg-[#1A1A1A] rounded-lg px-3 py-2">
+              <Image
+                src="/logo.webp"
+                alt="Moreno & Chericoni Advogados"
+                width={52}
+                height={52}
+                className="object-contain"
+              />
+            </div>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-9">
             {navLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-[#737373] hover:text-white transition-colors font-medium tracking-wide"
+                className="text-sm text-[#6B6258] hover:text-[#1A1A1A] transition-colors font-medium tracking-wide"
               >
                 {l.label}
               </a>
@@ -47,7 +79,7 @@ export function Header() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center gap-2.5 bg-[#25d366] hover:bg-[#1ebd5c] text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all hover:gap-4"
+            className="hidden lg:inline-flex items-center gap-2.5 bg-[#25d366] hover:bg-[#1ebd5c] text-white text-sm font-bold px-6 py-3 rounded-full transition-all hover:gap-4"
           >
             Falar com especialista
             <ArrowRight className="w-4 h-4" />
@@ -55,7 +87,7 @@ export function Header() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden w-10 h-10 flex items-center justify-center text-[#737373] hover:text-white transition-colors"
+            className="lg:hidden w-11 h-11 flex items-center justify-center text-[#6B6258] hover:text-[#1A1A1A] transition-colors"
             aria-label="Menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -65,24 +97,24 @@ export function Header() {
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 lg:hidden bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-40 lg:hidden bg-black/30 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      <div className={`fixed top-16 left-0 right-0 z-40 lg:hidden bg-[#0d0d0d] border-b border-[#1f1f1f] transition-all duration-200 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+      <div className={`fixed top-20 left-0 right-0 z-40 lg:hidden bg-[#F0EAE0] border-b border-[#DDD5C5] transition-all duration-200 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}>
         <div className="container mx-auto max-w-7xl px-5 py-4 flex flex-col gap-1">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setIsOpen(false)}
-              className="py-3 px-4 text-[#a3a3a3] hover:text-white hover:bg-[#141414] rounded-lg transition-colors font-medium"
+              className="py-3 px-4 text-[#6B6258] hover:text-[#1A1A1A] hover:bg-[#E8E0D4] rounded-lg transition-colors font-medium"
             >
               {l.label}
             </a>
           ))}
-          <div className="mt-3 pt-3 border-t border-[#1f1f1f]">
+          <div className="mt-3 pt-3 border-t border-[#DDD5C5]">
             <a
               href={WA_LINK}
               target="_blank"

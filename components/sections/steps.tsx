@@ -14,7 +14,7 @@ const steps = [
   {
     number: "02",
     title: "Levantamento do extrato",
-    desc: "Obtemos o extrato de empréstimos pelo Meu INSS — um raio-x completo de tudo que está vinculado ao seu CPF.",
+    desc: "Obtemos o extrato de empréstimos pelo Meu INSS: um raio-x completo de tudo que está vinculado ao seu CPF.",
   },
   {
     number: "03",
@@ -29,7 +29,7 @@ const steps = [
   {
     number: "05",
     title: "Análise técnica",
-    desc: "Examinamos cada operação em detalhes — taxas, encargos, cláusulas abusivas, irregularidades na contratação.",
+    desc: "Examinamos cada operação em detalhes: taxas, encargos, cláusulas abusivas e irregularidades na contratação.",
   },
   {
     number: "06",
@@ -40,7 +40,7 @@ const steps = [
 
 export function Steps() {
   return (
-    <section id="como-funciona" className="py-16 sm:py-24 bg-[#0a0a0a]">
+    <section id="como-funciona" className="py-16 sm:py-24 section-beige-alt">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
 
         <Reveal direction="up" className="mb-12 sm:mb-16">
@@ -48,28 +48,28 @@ export function Steps() {
             <div className="w-12 h-0.5 bg-[#c9a961]" />
             <span className="text-[#c9a961] text-sm font-bold uppercase tracking-widest">Processo</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A] max-w-2xl">
             Como funciona o atendimento
           </h2>
-          <p className="text-[#737373] mt-4 text-lg max-w-2xl">
-            Do primeiro contato até a conclusão do caso — um processo transparente, do início ao fim.
+          <p className="text-[#6B6258] mt-4 text-lg max-w-2xl">
+            Do primeiro contato até a conclusão do caso. Um processo transparente, do início ao fim.
           </p>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1f1f1f]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#CCC4B4]">
           {steps.map((s, i) => (
             <Reveal
               key={i}
               direction="up"
               delay={i * 80}
-              className="bg-[#0a0a0a] p-8 sm:p-9 relative group hover:bg-[#0d0d0d] transition-colors"
+              className="bg-[#E8E0D4] p-8 sm:p-9 relative group hover:bg-[#DDD5C5] transition-colors"
             >
-              <span className="text-6xl font-black text-[#c9a961]/10 leading-none select-none block mb-4">
+              <span className="text-6xl font-black text-[#c9a961]/20 leading-none select-none block mb-4">
                 {s.number}
               </span>
               <div className="w-8 h-0.5 bg-[#c9a961] mb-4" />
-              <h3 className="text-lg font-black text-white mb-2 leading-tight">{s.title}</h3>
-              <p className="text-[#a3a3a3] text-sm leading-relaxed">{s.desc}</p>
+              <h3 className="text-lg font-black text-[#1A1A1A] mb-2 leading-tight">{s.title}</h3>
+              <p className="text-[#6B6258] text-sm leading-relaxed">{s.desc}</p>
             </Reveal>
           ))}
         </div>
@@ -85,7 +85,7 @@ export function Steps() {
               Começar agora pelo WhatsApp
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <p className="text-[#525252] text-sm mt-4">
+            <p className="text-[#9A9080] text-sm mt-4">
               Se você já tem o extrato do Meu INSS ou os contratos, a análise começa na mesma hora.
             </p>
           </div>

@@ -23,7 +23,7 @@ const nav = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-[#2a2a2a]">
+    <footer className="bg-[#0a0a0a] border-t border-[#1f1f1f]">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="col-span-2 lg:col-span-1">
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
 
           <div className="hidden sm:block">
-            <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Áreas de Atuação</h4>
+            <h4 className="font-bold text-white mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Áreas de Atuação</h4>
             <ul className="space-y-2">
               {areas.map((a, i) => (
                 <li key={i}>
@@ -54,7 +54,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Navegação</h4>
+            <h4 className="font-bold text-white mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Navegação</h4>
             <ul className="space-y-2">
               {nav.map((l, i) => (
                 <li key={i}>
@@ -65,11 +65,11 @@ export function Footer() {
           </div>
 
           <div className="col-span-2 sm:col-span-1">
-            <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Contato</h4>
+            <h4 className="font-bold text-white mb-4 text-sm uppercase tracking-wider border-l-2 border-[#c9a961] pl-3">Contato</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#c9a961] flex-shrink-0 mt-0.5" />
-                <span className="text-[#a3a3a3] text-sm">Av. Índico, 86 — Sala 42<br />Jardim do Mar · SBC - SP</span>
+                <span className="text-[#a3a3a3] text-sm">Av. Índico, 86, Sala 42<br />Jardim do Mar · SBC - SP</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#c9a961] flex-shrink-0" />
@@ -90,7 +90,7 @@ export function Footer() {
         <div className="mt-10 pt-6 border-t border-[#2a2a2a] text-center space-y-2">
           <p className="text-sm text-[#a3a3a3]">© {new Date().getFullYear()} Moreno & Chericoni Advogados. Todos os direitos reservados.</p>
           <p className="text-xs text-[#a3a3a3]/60">
-            OAB/SP 189.561 · OAB/SP 175.057 — Este site não constitui propaganda de serviços advocatícios, conforme diretrizes do Código de Ética e Disciplina da OAB.
+            OAB/SP 189.561 · OAB/SP 175.057. Este site não constitui propaganda de serviços advocatícios, conforme diretrizes do Código de Ética e Disciplina da OAB.
           </p>
         </div>
       </div>
