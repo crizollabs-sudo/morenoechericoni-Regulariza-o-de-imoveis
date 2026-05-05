@@ -44,7 +44,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-[#F0EAE0]/95 backdrop-blur-sm border-b border-[#DDD5C5] transition-transform duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 bg-[#F0EAE0]/95 backdrop-blur-sm border-b border-[#C7B89F] transition-transform duration-300 ${
           visible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
@@ -68,7 +68,7 @@ export function Header() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm text-[#6B6258] hover:text-[#1A1A1A] transition-colors font-medium tracking-wide"
+                className="text-sm text-[#51473D] hover:text-[#1A1A1A] transition-colors font-semibold tracking-wide"
               >
                 {l.label}
               </a>
@@ -87,7 +87,7 @@ export function Header() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden w-11 h-11 flex items-center justify-center text-[#6B6258] hover:text-[#1A1A1A] transition-colors"
+            className="lg:hidden w-11 h-11 flex items-center justify-center text-[#51473D] hover:text-[#1A1A1A] transition-colors"
             aria-label="Menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -102,19 +102,19 @@ export function Header() {
         />
       )}
 
-      <div className={`fixed top-20 left-0 right-0 z-40 lg:hidden bg-[#F0EAE0] border-b border-[#DDD5C5] transition-all duration-200 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}>
+      <div className={`fixed top-20 left-0 right-0 z-40 lg:hidden bg-[#F0EAE0] border-b border-[#C7B89F] transition-all duration-200 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}>
         <div className="container mx-auto max-w-7xl px-5 py-4 flex flex-col gap-1">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setIsOpen(false)}
-              className="py-3 px-4 text-[#6B6258] hover:text-[#1A1A1A] hover:bg-[#E8E0D4] rounded-lg transition-colors font-medium"
+              className="py-3 px-4 text-[#51473D] hover:text-[#1A1A1A] hover:bg-[#E8E0D4] rounded-lg transition-colors font-semibold"
             >
               {l.label}
             </a>
           ))}
-          <div className="mt-3 pt-3 border-t border-[#DDD5C5]">
+          <div className="mt-3 pt-3 border-t border-[#C7B89F]">
             <a
               href={WA_LINK}
               target="_blank"

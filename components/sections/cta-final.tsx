@@ -43,7 +43,7 @@ export function CtaFinal() {
             <div className="w-12 h-[2px] bg-[#c9a961] mb-8" />
 
             <div className="border-l-2 border-red-500/60 pl-5 mb-10 py-1">
-              <p className="text-[#a3a3a3] text-lg leading-relaxed">
+              <p className="text-[#D0D0D0] text-lg leading-relaxed">
                 Se você tem empréstimos no seu CPF que não reconhece, ou está pagando mais do que deveria em um financiamento,{" "}
                 <span className="text-red-400 font-bold">não espere a dívida crescer.</span>{" "}
                 Uma análise gratuita pode revelar o que o banco não quer que você saiba.
@@ -56,7 +56,7 @@ export function CtaFinal() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/25"
+              className="group inline-flex w-full sm:w-auto max-w-full items-center justify-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-sm sm:text-base px-5 sm:px-8 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/25 text-center"
             >
               Falar com advogado especialista
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

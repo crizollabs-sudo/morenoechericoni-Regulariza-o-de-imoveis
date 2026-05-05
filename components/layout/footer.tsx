@@ -28,7 +28,7 @@ export function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="col-span-2 lg:col-span-1">
             <Image src="/logo.webp" alt="Moreno & Chericoni Advogados" width={56} height={56} className="object-contain mb-4" />
-            <p className="text-[#a3a3a3] text-sm leading-relaxed mb-4">
+            <p className="text-[#D0D0D0] text-sm leading-relaxed mb-4">
               Escritório especializado em Direito Bancário com mais de 20 anos defendendo clientes contra práticas abusivas de bancos e financeiras.
             </p>
             <a
@@ -47,7 +47,7 @@ export function Footer() {
             <ul className="space-y-2">
               {areas.map((a, i) => (
                 <li key={i}>
-                  <a href="#areas" className="text-[#a3a3a3] text-sm hover:text-[#c9a961] transition-colors">{a}</a>
+                  <a href="#areas" className="text-[#D0D0D0] text-sm hover:text-[#c9a961] transition-colors">{a}</a>
                 </li>
               ))}
             </ul>
@@ -58,7 +58,7 @@ export function Footer() {
             <ul className="space-y-2">
               {nav.map((l, i) => (
                 <li key={i}>
-                  <a href={l.href} className="text-[#a3a3a3] text-sm hover:text-[#c9a961] transition-colors">{l.label}</a>
+                  <a href={l.href} className="text-[#D0D0D0] text-sm hover:text-[#c9a961] transition-colors">{l.label}</a>
                 </li>
               ))}
             </ul>
@@ -69,27 +69,27 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#c9a961] flex-shrink-0 mt-0.5" />
-                <span className="text-[#a3a3a3] text-sm">Av. Índico, 86, Sala 42<br />Jardim do Mar · SBC - SP</span>
+                <span className="text-[#D0D0D0] text-sm">Av. Índico, 86, Sala 42<br />Jardim do Mar · SBC - SP</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#c9a961] flex-shrink-0" />
-                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] text-sm hover:text-[#c9a961] transition-colors">(11) 99026-7173</a>
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-[#D0D0D0] text-sm hover:text-[#c9a961] transition-colors">(11) 99026-7173</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#c9a961] flex-shrink-0" />
-                <span className="text-[#a3a3a3] text-sm">(11) 4399-2531</span>
+                <span className="text-[#D0D0D0] text-sm">(11) 4399-2531</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#c9a961] flex-shrink-0" />
-                <a href="mailto:advocaciamorenoechericoni@gmail.com" className="text-[#a3a3a3] text-sm hover:text-[#c9a961] transition-colors break-all">advocaciamorenoechericoni@gmail.com</a>
+                <a href="mailto:advocaciamorenoechericoni@gmail.com" className="text-[#D0D0D0] text-sm hover:text-[#c9a961] transition-colors break-all">advocaciamorenoechericoni@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-[#2a2a2a] text-center space-y-2">
-          <p className="text-sm text-[#a3a3a3]">© {new Date().getFullYear()} Moreno & Chericoni Advogados. Todos os direitos reservados.</p>
-          <p className="text-xs text-[#a3a3a3]/60">
+          <p className="text-sm text-[#D0D0D0]">© {new Date().getFullYear()} Moreno & Chericoni Advogados. Todos os direitos reservados.</p>
+          <p className="text-xs text-[#D0D0D0]/80">
             OAB/SP 189.561 · OAB/SP 175.057. Este site não constitui propaganda de serviços advocatícios, conforme diretrizes do Código de Ética e Disciplina da OAB.
           </p>
         </div>

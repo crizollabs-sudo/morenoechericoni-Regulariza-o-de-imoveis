@@ -11,61 +11,61 @@ export function Location() {
         <div className="mb-12">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-0.5 bg-[#c9a961]" />
-            <span className="text-[#c9a961] text-sm font-bold uppercase tracking-widest">Localização</span>
+            <span className="text-[#9A783A] text-sm font-bold uppercase tracking-widest">Localização</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A]">
             Onde nos encontrar
           </h2>
-          <p className="text-[#6B6258] mt-3 text-lg">
+          <p className="text-[#51473D] mt-3 text-lg">
             Atendemos presencialmente em São Bernardo do Campo e online para todo o Brasil.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-0 border border-[#CCC4B4]">
-          <div className="p-8 sm:p-10 border-b lg:border-b-0 lg:border-r border-[#CCC4B4] bg-white">
+        <div className="grid lg:grid-cols-2 gap-0 border border-[#C7B89F]">
+          <div className="p-8 sm:p-10 border-b lg:border-b-0 lg:border-r border-[#C7B89F] bg-white">
             <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-[#c9a961]/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-[#c9a961]" />
+                  <MapPin className="w-5 h-5 text-[#9A783A]" />
                 </div>
                 <div>
                   <p className="text-[#1A1A1A] font-bold mb-1">Endereço</p>
-                  <p className="text-[#6B6258]">Avenida Índico, 86, Sala 42</p>
-                  <p className="text-[#6B6258]">Jardim do Mar · São Bernardo do Campo - SP</p>
+                  <p className="text-[#51473D]">Avenida Índico, 86, Sala 42</p>
+                  <p className="text-[#51473D]">Jardim do Mar · São Bernardo do Campo - SP</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-[#c9a961]/10 flex items-center justify-center flex-shrink-0">
-                  <MessageCircle className="w-5 h-5 text-[#c9a961]" />
+                  <MessageCircle className="w-5 h-5 text-[#9A783A]" />
                 </div>
                 <div>
                   <p className="text-[#1A1A1A] font-bold mb-1">WhatsApp</p>
-                  <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-[#6B6258] hover:text-[#c9a961] transition-colors block">
+                  <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-[#51473D] hover:text-[#9A783A] transition-colors block">
                     (11) 99026-7173
                   </a>
-                  <p className="text-[#6B6258] text-sm">(11) 91457-0777</p>
-                  <p className="text-[#6B6258] text-sm">(11) 9 6517-9450</p>
+                  <p className="text-[#51473D] text-sm">(11) 91457-0777</p>
+                  <p className="text-[#51473D] text-sm">(11) 9 6517-9450</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-[#c9a961]/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-[#c9a961]" />
+                  <Phone className="w-5 h-5 text-[#9A783A]" />
                 </div>
                 <div>
                   <p className="text-[#1A1A1A] font-bold mb-1">Telefone Fixo</p>
-                  <p className="text-[#6B6258]">(11) 4399-2531</p>
+                  <p className="text-[#51473D]">(11) 4399-2531</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-[#c9a961]/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-[#c9a961]" />
+                  <Mail className="w-5 h-5 text-[#9A783A]" />
                 </div>
                 <div>
                   <p className="text-[#1A1A1A] font-bold mb-1">E-mail</p>
-                  <a href="mailto:advocaciamorenoechericoni@gmail.com" className="text-[#6B6258] hover:text-[#c9a961] transition-colors break-all">
+                  <a href="mailto:advocaciamorenoechericoni@gmail.com" className="text-[#51473D] hover:text-[#9A783A] transition-colors break-all">
                     advocaciamorenoechericoni@gmail.com
                   </a>
                 </div>

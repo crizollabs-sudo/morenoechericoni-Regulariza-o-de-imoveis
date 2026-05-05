@@ -51,13 +51,13 @@ export function Services() {
         <Reveal direction="up" className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-3 mb-4">
             <span className="w-6 h-[2px] bg-[#c9a961]" />
-            <span className="text-[#c9a961] text-xs font-bold uppercase tracking-[0.2em]">Áreas de Atuação</span>
+            <span className="text-[#9A783A] text-xs font-bold uppercase tracking-[0.2em]">Áreas de Atuação</span>
             <span className="w-6 h-[2px] bg-[#c9a961]" />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A]">
             Como podemos te ajudar?
           </h2>
-          <p className="text-[#6B6258] mt-4 text-lg max-w-2xl mx-auto">
+          <p className="text-[#51473D] mt-4 text-lg max-w-2xl mx-auto">
             Atuamos em todas as frentes do consignado pra proteger aposentados, pensionistas e servidores que foram lesados por bancos e financeiras.
           </p>
         </Reveal>
@@ -68,13 +68,13 @@ export function Services() {
               key={i}
               direction="up"
               delay={i * 60}
-              className="group flex flex-col items-center text-center bg-white border border-[#DDD5C5] rounded-2xl p-6 sm:p-7 hover:border-[#c9a961]/50 hover:shadow-md hover:shadow-[#c9a961]/10 transition-all duration-300"
+              className="group flex flex-col items-center text-center bg-white border border-[#C7B89F] rounded-2xl p-6 sm:p-7 hover:border-[#c9a961]/60 hover:shadow-md hover:shadow-[#c9a961]/10 transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-2xl bg-[#c9a961]/10 border border-[#c9a961]/20 flex items-center justify-center mb-4 group-hover:bg-[#c9a961]/15 group-hover:border-[#c9a961]/35 transition-all duration-300">
-                <s.icon className="w-6 h-6 text-[#c9a961]" />
+              <div className="w-14 h-14 rounded-2xl bg-[#c9a961]/15 border border-[#c9a961]/35 flex items-center justify-center mb-4 group-hover:bg-[#c9a961]/20 group-hover:border-[#c9a961]/50 transition-all duration-300">
+                <s.icon className="w-6 h-6 text-[#9A783A]" />
               </div>
               <h3 className="font-bold text-[#1A1A1A] text-base mb-2 leading-snug">{s.title}</h3>
-              <p className="text-[#6B6258] text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-[#51473D] text-sm leading-relaxed">{s.desc}</p>
             </Reveal>
           ))}
         </div>

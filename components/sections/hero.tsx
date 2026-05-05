@@ -13,7 +13,7 @@ export function Hero() {
       {/* Imagem de fundo — textura visível, integrada ao beige */}
       <div className="absolute inset-0 z-0">
         {/* Mobile */}
-        <div className="absolute left-0 right-0 top-0 h-[52%] lg:hidden">
+        <div className="absolute left-0 right-0 top-0 h-full lg:hidden">
           <Image
             src="/hero-bg.jpg"
             alt=""
@@ -34,6 +34,7 @@ export function Hero() {
         </div>
         {/* Véu beige por cima pra fundir com o fundo */}
         <div className="absolute inset-0 bg-[#F0EAE0]/60" />
+        <div className="absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-b from-transparent via-[#F0EAE0]/45 to-[#F0EAE0]/75 lg:hidden" />
       </div>
 
       {/* Linha de acento esquerda */}
@@ -47,9 +48,9 @@ export function Hero() {
           {/* Texto */}
           <div className="pt-10 pb-4 lg:py-16">
             <Reveal direction="down" delay={0}>
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-5 min-w-0">
                 <span className="w-6 h-[2px] bg-[#c9a961] flex-shrink-0" />
-                <span className="text-[#c9a961] text-[0.65rem] font-bold uppercase tracking-[0.12em] sm:tracking-[0.2em]">
+                <span className="min-w-0 text-[#9A783A] text-[0.65rem] font-bold uppercase tracking-[0.08em] sm:tracking-[0.2em]">
                   Aposentado · Pensionista · Servidor público
                 </span>
               </div>
@@ -58,12 +59,12 @@ export function Hero() {
             <Reveal direction="up" delay={100}>
               <h1 className="text-[2.25rem] sm:text-4xl lg:text-[2.75rem] font-black text-[#1A1A1A] leading-[1.15] mb-6">
                 Desconto de consignado{" "}
-                <em className="not-italic text-[#c9a961]">que você não autorizou?</em>
+                <em className="not-italic text-[#B8944D]">que você não autorizou?</em>
               </h1>
             </Reveal>
 
             <Reveal direction="up" delay={200}>
-              <p className="text-[#6B6258] text-lg leading-relaxed mb-10 max-w-lg">
+              <p className="text-[#51473D] text-lg leading-relaxed mb-10 max-w-lg">
                 A gente analisa seu extrato e seu contrato. Geralmente tem mais coisa errada do que parece: juros abusivos, refinanciamento que você não assinou, desconto sem autorização.{" "}
                 <span className="text-[#1A1A1A] font-semibold">Se existir, o banco devolve.</span>{" "}
                 Em alguns casos, até em dobro.
@@ -75,7 +76,7 @@ export function Hero() {
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-base px-7 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/30 mb-10"
+                className="group inline-flex w-full sm:w-auto max-w-full items-center justify-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-sm sm:text-base px-5 sm:px-7 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/30 mb-10 text-center"
               >
                 Quero analisar meu consignado
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -83,14 +84,14 @@ export function Hero() {
             </Reveal>
 
             <Reveal direction="up" delay={420}>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 text-sm text-[#9A9080]">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 text-sm font-medium text-[#5B5045]">
                 <div className="flex items-center gap-2">
-                  <Monitor className="w-4 h-4 text-[#c9a961]/60" />
+                  <Monitor className="w-4 h-4 text-[#b8944d]" />
                   <span>Online e presencial</span>
                 </div>
-                <div className="w-px h-4 bg-[#CCC4B4] hidden sm:block" />
+                <div className="w-px h-4 bg-[#BDAE95] hidden sm:block" />
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#c9a961]/60" />
+                  <MapPin className="w-4 h-4 text-[#b8944d]" />
                   <span>São Bernardo do Campo - SP</span>
                 </div>
               </div>
@@ -98,20 +99,20 @@ export function Hero() {
           </div>
 
           {/* Foto */}
-          <Reveal direction="left" delay={150} className="flex justify-center lg:justify-end">
-            <div className="relative flex justify-center lg:justify-end">
+          <Reveal direction="left" delay={150} className="flex w-full min-w-0 justify-center overflow-hidden lg:overflow-visible lg:justify-end">
+            <div className="relative flex w-full max-w-[360px] justify-center sm:max-w-[440px] lg:w-auto lg:max-w-none lg:justify-end">
               <Image
                 src="/hero-trabalhista.webp"
                 alt="Advogados especialistas em Direito Bancário — Moreno & Chericoni"
                 width={520}
                 height={620}
-                className="object-contain drop-shadow-xl relative z-10"
+                className="relative z-10 h-auto w-full max-w-[360px] object-contain drop-shadow-xl sm:max-w-[440px] lg:w-auto lg:max-w-none"
                 priority
               />
               {/* Badge experiência */}
-              <div className="absolute bottom-6 left-0 lg:bottom-auto lg:top-[72%] lg:-translate-y-1/2 lg:-left-6 z-20 bg-white border border-[#DDD5C5] rounded-xl px-4 py-3 shadow-lg">
-                <div className="text-2xl font-black text-[#c9a961]">+20</div>
-                <div className="text-xs text-[#6B6258]">anos de experiência</div>
+              <div className="absolute bottom-6 left-0 lg:bottom-auto lg:top-[72%] lg:-translate-y-1/2 lg:-left-6 z-20 bg-white border border-[#C7B89F] rounded-xl px-4 py-3 shadow-lg">
+                <div className="text-2xl font-black text-[#B8944D]">+20</div>
+                <div className="text-xs text-[#51473D]">anos de experiência</div>
               </div>
             </div>
           </Reveal>

@@ -46,17 +46,17 @@ export function Steps() {
         <Reveal direction="up" className="mb-12 sm:mb-16">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-0.5 bg-[#c9a961]" />
-            <span className="text-[#c9a961] text-sm font-bold uppercase tracking-widest">Processo</span>
+            <span className="text-[#9A783A] text-sm font-bold uppercase tracking-widest">Processo</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A] max-w-2xl">
             Como funciona o atendimento
           </h2>
-          <p className="text-[#6B6258] mt-4 text-lg max-w-2xl">
+          <p className="text-[#51473D] mt-4 text-lg max-w-2xl">
             Do primeiro contato até a conclusão do caso. Um processo transparente, do início ao fim.
           </p>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#CCC4B4]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#BDAE95]">
           {steps.map((s, i) => (
             <Reveal
               key={i}
@@ -64,12 +64,12 @@ export function Steps() {
               delay={i * 80}
               className="bg-[#E8E0D4] p-8 sm:p-9 relative group hover:bg-[#DDD5C5] transition-colors"
             >
-              <span className="text-6xl font-black text-[#c9a961]/20 leading-none select-none block mb-4">
+              <span className="text-6xl font-black text-[#9A783A]/55 leading-none select-none block mb-4">
                 {s.number}
               </span>
               <div className="w-8 h-0.5 bg-[#c9a961] mb-4" />
               <h3 className="text-lg font-black text-[#1A1A1A] mb-2 leading-tight">{s.title}</h3>
-              <p className="text-[#6B6258] text-sm leading-relaxed">{s.desc}</p>
+              <p className="text-[#51473D] text-sm leading-relaxed">{s.desc}</p>
             </Reveal>
           ))}
         </div>
@@ -80,12 +80,12 @@ export function Steps() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/25"
+              className="group inline-flex w-full sm:w-auto max-w-full items-center justify-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-sm sm:text-base px-5 sm:px-8 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/25 text-center"
             >
               Começar agora pelo WhatsApp
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <p className="text-[#9A9080] text-sm mt-4">
+            <p className="text-[#5B5045] text-sm font-medium mt-4">
               Se você já tem o extrato do Meu INSS ou os contratos, a análise começa na mesma hora.
             </p>
           </div>

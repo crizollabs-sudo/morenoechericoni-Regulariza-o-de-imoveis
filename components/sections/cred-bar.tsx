@@ -11,13 +11,15 @@ const stats = [
 export function CredBar() {
   return (
     <div className="bg-[#0a0a0a]">
-      <div className="container mx-auto max-w-5xl px-4 sm:px-6 py-8 sm:py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-[#c9a961]/15">
+      <div className="container mx-auto max-w-5xl px-4 py-7 sm:px-6 sm:py-9">
+        <div className="grid grid-cols-3 items-center gap-2 sm:gap-0">
           {stats.map((s, i) => (
             <Reveal key={i} direction="up" delay={i * 80}>
-              <div className="text-center py-5 sm:py-0 sm:px-8 first:pt-0 last:pb-0 sm:first:pl-0 sm:last:pr-0">
-                <div className="text-2xl sm:text-3xl font-black text-[#c9a961] mb-1">{s.value}</div>
-                <div className="text-[#737373] text-xs uppercase tracking-wider leading-relaxed">{s.label}</div>
+              <div className="text-center px-1 sm:px-8">
+                <div className="mb-1 font-black text-[#c9a961] text-base leading-none sm:text-2xl">{s.value}</div>
+                <div className="mx-auto max-w-[7.5rem] text-[0.56rem] font-bold uppercase leading-[1.15] tracking-[0.08em] text-[#B8B8B8] sm:max-w-none sm:text-[0.68rem]">
+                  {s.label}
+                </div>
               </div>
             </Reveal>
           ))}

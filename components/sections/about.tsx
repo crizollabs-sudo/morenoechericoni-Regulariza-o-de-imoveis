@@ -64,8 +64,8 @@ export function About() {
                     {lawyer.years} anos de experiência
                   </div>
                 </div>
-                <p className="text-[#a3a3a3] leading-relaxed mb-4">{lawyer.bio}</p>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-[#c9a961]/5 border border-[#c9a961]/15">
+                <p className="text-[#D0D0D0] leading-relaxed mb-4">{lawyer.bio}</p>
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-[#c9a961]/10 border border-[#c9a961]/30">
                   <Image
                     src={lawyer.bookCover}
                     alt={lawyer.bookAlt}
@@ -73,7 +73,7 @@ export function About() {
                     height={50}
                     className="rounded object-cover flex-shrink-0 shadow-md"
                   />
-                  <p className="text-[#a3a3a3] text-sm font-medium">{lawyer.highlight}</p>
+                  <p className="text-[#D0D0D0] text-sm font-medium">{lawyer.highlight}</p>
                 </div>
               </div>
             </Reveal>

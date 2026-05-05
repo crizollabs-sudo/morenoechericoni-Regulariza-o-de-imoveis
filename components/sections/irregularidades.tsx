@@ -31,15 +31,16 @@ export function Irregularidades() {
     <section className="py-16 sm:py-24 section-beige-alt">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6">
 
-        <Reveal direction="up" className="mb-12 sm:mb-16">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-0.5 bg-red-500" />
+        <Reveal direction="up" className="text-center mb-12 sm:mb-16">
+          <div className="inline-flex items-center justify-center gap-3 mb-4">
+            <span className="w-6 h-[2px] bg-red-500" />
             <span className="text-red-600 text-sm font-bold uppercase tracking-widest">Sinais de Alerta</span>
+            <span className="w-6 h-[2px] bg-red-500" />
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A] max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A] max-w-3xl mx-auto">
             Você se identifica com alguma dessas situações?
           </h2>
-          <p className="text-[#6B6258] mt-4 text-lg max-w-2xl">
+          <p className="text-[#51473D] mt-4 text-lg max-w-2xl mx-auto">
             Se reconhece pelo menos uma, vale a pena olhar seu contrato com atenção. Todos esses casos podem ser revertidos na justiça.
           </p>
         </Reveal>
@@ -64,7 +65,7 @@ export function Irregularidades() {
                 </div>
                 <h3 className="font-bold text-[#1A1A1A] text-base leading-snug">{f.title}</h3>
               </div>
-              <p className="text-[#6B6258] text-sm leading-relaxed pl-11">{f.desc}</p>
+              <p className="text-[#51473D] text-sm leading-relaxed pl-11">{f.desc}</p>
             </Reveal>
           ))}
         </div>
