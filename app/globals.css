@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Beige + Black + Gold Theme — Moreno & Chericoni Bancário */
+  /* Beige + Black + Gold Theme — Moreno & Chericoni Imobiliário */
   --background: #F0EAE0;
   --foreground: #1A1A1A;
   --card: #FFFFFF;
@@ -125,17 +125,18 @@
 
 /* ══ Scroll Reveal ══════════════════════════════════════════════════════════ */
 .reveal {
-  opacity: 0;
-  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
 }
-.reveal-up    { transform: translateY(44px); }
-.reveal-down  { transform: translateY(-44px); }
-.reveal-right { transform: translateX(-44px); }
-.reveal-left  { transform: translateX(44px); }
-.reveal-grow  { transform: scale(0.82); }
-.reveal.is-visible { opacity: 1; transform: translate(0, 0) scale(1); }
+.reveal-up,
+.reveal-down,
+.reveal-right,
+.reveal-left,
+.reveal-grow,
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
 
 @media (max-width: 767px) {
   .container,
@@ -146,7 +147,7 @@
 
   .reveal-left,
   .reveal-right {
-    transform: translateY(32px);
+    transform: none;
   }
 }
 

@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/reveal"
 const stats = [
   { value: "+20", label: "Anos de experiência" },
   { value: "OAB/SP", label: "189.561 · 175.057. Advogados registrados" },
-  { value: "100%", label: "Atendimento online para todo o Brasil" },
+  { value: "100%", label: "Atendimento online e presencial" },
 ]
 
 export function CredBar() {

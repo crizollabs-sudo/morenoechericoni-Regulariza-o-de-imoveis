@@ -8,7 +8,6 @@ import { Hero } from "@/components/sections/hero"
 import { CredBar } from "@/components/sections/cred-bar"
 import { Irregularidades } from "@/components/sections/irregularidades"
 import { Services } from "@/components/sections/services"
-import { Steps } from "@/components/sections/steps"
 import { About } from "@/components/sections/about"
 import { Why } from "@/components/sections/why"
 import { CtaFinal } from "@/components/sections/cta-final"
@@ -23,9 +22,8 @@ export default function Home() {
       <Header />
       <Hero />
       <CredBar />
-      <Irregularidades />
       <Services />
-      <Steps />
+      <Irregularidades />
       <About />
       <Why />
       <CtaFinal />

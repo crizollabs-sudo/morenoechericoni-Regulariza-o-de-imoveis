@@ -6,13 +6,13 @@ import './globals.css'
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Moreno & Chericoni Advogados | Especialistas em Direito Bancário',
-  description: 'Advogados especialistas em Direito Bancário em São Bernardo do Campo. Revisão de contratos, cobranças indevidas, empréstimos fraudulentos e refinanciamentos. Atendemos presencialmente e online para todo o Brasil.',
-  keywords: ['advogado bancário', 'direito bancário', 'revisão de contrato', 'empréstimo consignado', 'cobrança indevida', 'fraude bancária', 'empréstimo não reconhecido', 'São Bernardo do Campo'],
+  title: 'Moreno & Chericoni Advogados | Especialistas em Direito Imobiliário',
+  description: 'Advogados especialistas em Direito Imobiliário em São Bernardo do Campo. Contratos, due diligence, regularização, usucapião, locação, despejo, leilões, defeitos construtivos e direito condominial.',
+  keywords: ['advogado imobiliário', 'direito imobiliário', 'contratos imobiliários', 'due diligence imobiliária', 'usucapião', 'regularização de imóveis', 'locação e despejo', 'leilão de imóveis', 'direito condominial', 'São Bernardo do Campo'],
   authors: [{ name: 'Moreno & Chericoni Advogados' }],
   openGraph: {
-    title: 'Moreno & Chericoni Advogados | Especialistas em Direito Bancário',
-    description: 'Seu banco pode estar te cobrando mais do que deveria. A maioria dos clientes não percebe — e não cobra.',
+    title: 'Moreno & Chericoni Advogados | Especialistas em Direito Imobiliário',
+    description: 'Evite prejuízos, fraudes e dores de cabeça em operações imobiliárias. Tenha um especialista do seu lado.',
     type: 'website',
     locale: 'pt_BR',
   },
@@ -29,11 +29,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
       <head>
@@ -45,8 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
       <body className={`${geist.className} antialiased`}>
         <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJTFN3WW"
-            height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJTFN3WW" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
         </noscript>
         {children}
       </body>
