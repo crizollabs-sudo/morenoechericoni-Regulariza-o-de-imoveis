@@ -19,6 +19,11 @@ const isWhatsappHref = (href: string) => {
   )
 }
 
+const pushWhatsappClickEvent = () => {
+  window.dataLayer = window.dataLayer || []
+  window.dataLayer.push({ event: "whatsapp_click" })
+}
+
 export function WhatsappClickTracker() {
   useEffect(() => {
     const handleClick = (event: MouseEvent) => {
@@ -31,10 +36,10 @@ export function WhatsappClickTracker() {
 
       if (!href || !isWhatsappHref(href)) return
 
-      window.dataLayer = window.dataLayer || []
-      window.dataLayer.push({ event: "whatsapp_click" })
+      pushWhatsappClickEvent()
     }
 
+    // Capture phase makes the event reach GTM before the browser opens WhatsApp.
     document.addEventListener("click", handleClick, true)
 
     return () => {
