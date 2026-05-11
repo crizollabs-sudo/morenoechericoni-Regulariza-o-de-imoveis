@@ -2,10 +2,10 @@ import { Award, Layers3, Shield, Users } from "lucide-react"
 import { Reveal } from "@/components/ui/reveal"
 
 const reasons = [
-  { number: "01", icon: Award, title: "Especialização Reconhecida", desc: "Atuação focada em Direito Imobiliário, com leitura técnica das operações e dos riscos que envolvem cada imóvel." },
-  { number: "02", icon: Users, title: "Atendimento Personalizado", desc: "Cada caso é analisado de forma individual, com orientação clara e acompanhamento próximo em todas as etapas." },
-  { number: "03", icon: Shield, title: "Credibilidade Comprovada", desc: "Mais de 20 anos de experiência jurídica, OAB ativa e histórico de atuação estratégica na proteção de patrimônio." },
-  { number: "04", icon: Layers3, title: "Equipe Multidisciplinar", desc: "Visão integrada para lidar com contratos, registros, sucessões, locações, incorporações, litígios e regularizações." },
+  { number: "01", icon: Award, title: "Foco exclusivo em Direito Imobiliário", desc: "Toda a experiência da equipe está concentrada nas questões que envolvem imóveis, o que permite uma atuação mais precisa e fundamentada em cada situação." },
+  { number: "02", icon: Users, title: "Atendimento próximo e personalizado", desc: "Cada caso recebe atenção direta dos advogados responsáveis, sem intermediários, desde o diagnóstico inicial até a conclusão do processo." },
+  { number: "03", icon: Shield, title: "Transparência em cada etapa", desc: "Você é informado sobre o andamento do processo de forma clara, sem jargão desnecessário e sem surpresas." },
+  { number: "04", icon: Layers3, title: "Atendimento presencial e online", desc: "Sede em São Bernardo do Campo, com atendimento para todo o Brasil por videoconferência." },
 ]
 
 export function Why() {
@@ -18,8 +18,7 @@ export function Why() {
             <span className="text-[#9A783A] text-sm font-bold uppercase tracking-widest">Por que nos escolher</span>
           </div>
           <h2 className="max-w-7xl text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-black text-white leading-tight">
-            <span className="block">Segurança jurídica com estratégia,</span>
-            <span className="block">precisão e atendimento próximo.</span>
+            Segurança jurídica com atenção ao seu caso.
           </h2>
         </Reveal>
 

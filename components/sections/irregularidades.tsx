@@ -5,14 +5,14 @@ const audiences = [
   {
     icon: UserRound,
     title: "Pessoa Física",
-    desc: "Apoio jurídico para proteger patrimônio, regularizar imóveis e tomar decisões com segurança.",
-    items: ["Proprietários buscando regularização", "Herdeiros em processos sucessórios", "Investidores em leilões"],
+    desc: "Regularização para proprietários, herdeiros e compradores que precisam organizar a titularidade do imóvel.",
+    items: ["Proprietários com imóvel sem escritura ou registro", "Herdeiros com bens ainda em nome de falecidos", "Compradores que adquiriram por contrato de gaveta"],
   },
   {
     icon: Building2,
     title: "Empresas",
-    desc: "Estratégia jurídica para operações, ativos imobiliários e prevenção de riscos patrimoniais.",
-    items: ["Construtoras, incorporadoras e loteadoras", "Negócios de pequeno e médio porte com imóveis", "Empresas que precisam prevenir riscos patrimoniais"],
+    desc: "Orientação para empresas que precisam resolver pendências documentais e fundiárias com segurança.",
+    items: ["Construtoras e incorporadoras com pendências fundiárias", "Loteadoras em processo de regularização", "Negócios de pequeno e médio porte com imóveis irregulares no ativo"],
   },
 ]
 
@@ -27,8 +27,8 @@ export function Irregularidades() {
           </div>
           <div>
             <h2 className="max-w-6xl text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-black text-white leading-tight">
-              <span className="block">Proteção jurídica para quem compra,</span>
-              <span className="block">vende, regulariza ou administra imóveis.</span>
+              <span className="block">Regularização para quem precisa</span>
+              <span className="block">de clareza jurídica</span>
             </h2>
           </div>
         </Reveal>

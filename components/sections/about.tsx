@@ -6,7 +6,7 @@ const lawyers = [
     name: "Dra. Fabiula Chericoni",
     oab: "OAB/SP 189.561",
     years: "20",
-    bio: "Advogada há 20 anos. Formada pela Universidade do Grande ABC e especialista em Direito Processual Civil pela Escola Paulista de Direito. Atuação em causas bancárias com foco em defesa do consumidor e litígios contra instituições financeiras.",
+    bio: "Advogada com mais de 20 anos de experiência em Direito Imobiliário. Formada pela Universidade do Grande ABC, com atuação em regularização fundiária, usucapião e defesa de consumidores em casos imobiliários.",
     highlight: "Autora do livro: Manual de Conscientização Previdenciária para Mulheres.",
     bookCover: "/livro-fabiula-capa.jpg",
     bookAlt: "Manual de Conscientização Previdenciária para Mulheres",
@@ -16,7 +16,7 @@ const lawyers = [
     name: "Dr. Nilton Moreno",
     oab: "OAB/SP 175.057",
     years: "21",
-    bio: "Advogado há 21 anos. Formado pela Universidade do Grande ABC e especialista em Direito Previdenciário pela FMU. Membro-efetivo da Comissão de Direito Previdenciário OAB/SBC.",
+    bio: "Advogado com mais de 21 anos de atuação em Direito Imobiliário e Previdenciário. Formado pela Universidade do Grande ABC, membro efetivo do Conselho Previdenciário OAB/SBC.",
     highlight: "Autor do livro: Guia da Aposentadoria da Pessoa com Deficiência.",
     bookCover: "/livro-nilton-capa.jpg",
     bookAlt: "Guia da Aposentadoria da Pessoa com Deficiência",
@@ -34,7 +34,7 @@ export function About() {
             <span className="text-[#c9a961] text-sm font-bold uppercase tracking-widest">Equipe</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1A1A1A]">
-            Quem vai cuidar do seu caso
+            Quem orienta o seu processo
           </h2>
         </Reveal>
 
