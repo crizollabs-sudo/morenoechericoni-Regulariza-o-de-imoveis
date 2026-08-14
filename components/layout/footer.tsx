@@ -4,14 +4,12 @@ import Image from "next/image"
 const WA_LINK = "https://wa.me/5511990267173?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20advogado%20especialista%20em%20Direito%20Imobili%C3%A1rio."
 
 const areas = [
-  "Contratos Imobiliários",
-  "Due Diligence e Registros",
-  "Usucapião e Regularização",
-  "Cessão de Direitos",
-  "Locação e Despejo",
-  "Leilão de Imóveis",
-  "Defeitos Construtivos",
-  "Direito Condominial",
+  "Usucapião",
+  "Regularização Fundiária e REURB",
+  "Inventário e Herança",
+  "Correção de Escritura",
+  "Contrato de Gaveta",
+  "Cessão de Direitos Hereditários",
 ]
 
 const nav = [

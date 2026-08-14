@@ -26,7 +26,7 @@ export function CtaFinal() {
 
           <Reveal direction="up" delay={100}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-[#1A1A1A] leading-[1.1] mb-6">
-              Precisa de um advogado especialista em <em className="not-italic text-[#c9a961]">Direito Imobiliário?</em>
+              Tem um imóvel travado <em className="not-italic text-[#c9a961]">esperando pra ser regularizado?</em>
             </h2>
           </Reveal>
 

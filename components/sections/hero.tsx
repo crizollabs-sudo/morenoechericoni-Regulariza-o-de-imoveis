@@ -35,19 +35,19 @@ export function Hero() {
 
             <Reveal direction="up" delay={100} className="is-visible">
               <h1 className="text-[3.05rem] sm:text-5xl lg:text-[4.25rem] font-black text-[#1A1A1A] leading-[0.96] mb-5 tracking-tight">
-                Advogados<br />Especialistas em<br /><em className="not-italic text-[#B8944D]">Direito Imobiliário</em>
+                Imóvel de herança<br />ou sem escritura<br /><em className="not-italic text-[#B8944D]">no seu nome?</em>
               </h1>
             </Reveal>
 
             <Reveal direction="up" delay={200} className="is-visible">
               <p className="text-[#51473D] text-lg leading-relaxed mb-8 max-w-xl">
-                Evite prejuízos, fraudes e dores de cabeça na compra, venda, locação ou regularização de imóveis. <span className="text-[#1A1A1A] font-semibold">Tenha um especialista do seu lado.</span>
+                A gente regulariza imóvel de herança, sem escritura ou de contrato de gaveta, <span className="text-[#1A1A1A] font-semibold">pra você poder vender, financiar e valorizar o que é seu.</span>
               </p>
             </Reveal>
 
             <Reveal direction="up" delay={320} className="is-visible">
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="group inline-flex w-full sm:w-auto max-w-full items-center justify-center gap-3 bg-[#25d366] hover:bg-[#1ebd5c] text-white font-bold text-base px-6 sm:px-8 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-[#25d366]/30 mb-8 text-center">
-                Falar com especialista
+                Regularizar meu imóvel
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Reveal>

@@ -3,13 +3,13 @@ import { Reveal } from "@/components/ui/reveal"
 
 const lawyers = [
   {
-    name: "Dra. Fabiula Chericoni",
+    name: "Dra. Fabíola Chericoni",
     oab: "OAB/SP 189.561",
     years: "20",
     bio: "Advogada com mais de 20 anos de experiência em Direito Imobiliário. Formada pela Universidade do Grande ABC, com atuação em regularização fundiária, usucapião e defesa de consumidores em casos imobiliários.",
-    highlight: "Autora do livro: Manual de Conscientização Previdenciária para Mulheres.",
-    bookCover: "/livro-fabiula-capa.jpg",
-    bookAlt: "Manual de Conscientização Previdenciária para Mulheres",
+    highlight: undefined as string | undefined,
+    bookCover: undefined as string | undefined,
+    bookAlt: undefined as string | undefined,
     image: "/fotofabiula.jpg",
   },
   {
@@ -53,10 +53,12 @@ export function About() {
                   </div>
                 </div>
                 <p className="text-[#51473D] leading-relaxed mb-4">{lawyer.bio}</p>
-                <div className="flex items-center gap-3 p-3 rounded-lg bg-[#f7f2ea] border border-[#C7B89F]">
-                  <Image src={lawyer.bookCover} alt={lawyer.bookAlt} width={36} height={50} className="rounded object-cover flex-shrink-0 shadow-md" />
-                  <p className="text-[#51473D] text-sm font-medium">{lawyer.highlight}</p>
-                </div>
+                {lawyer.highlight && lawyer.bookCover && (
+                  <div className="flex items-center gap-3 p-3 rounded-lg bg-[#f7f2ea] border border-[#C7B89F]">
+                    <Image src={lawyer.bookCover} alt={lawyer.bookAlt ?? ""} width={36} height={50} className="rounded object-cover flex-shrink-0 shadow-md" />
+                    <p className="text-[#51473D] text-sm font-medium">{lawyer.highlight}</p>
+                  </div>
+                )}
               </div>
             </Reveal>
           ))}
