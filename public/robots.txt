@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imoveis.morenoechericoni.com.br/sitemap.xml
