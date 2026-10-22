@@ -6,21 +6,45 @@ import './globals.css'
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Moreno & Chericoni Advogados | Especialistas em Direito Imobiliário',
-  description: 'Advogados especialistas em Direito Imobiliário em São Bernardo do Campo. Contratos, due diligence, regularização, usucapião, locação, despejo, leilões, defeitos construtivos e direito condominial.',
-  keywords: ['advogado imobiliário', 'direito imobiliário', 'contratos imobiliários', 'due diligence imobiliária', 'usucapião', 'regularização de imóveis', 'locação e despejo', 'leilão de imóveis', 'direito condominial', 'São Bernardo do Campo'],
-  authors: [{ name: 'Moreno & Chericoni Advogados' }],
-  openGraph: {
-    title: 'Moreno & Chericoni Advogados | Especialistas em Direito Imobiliário',
-    description: 'Evite prejuízos, fraudes e dores de cabeça em operações imobiliárias. Tenha um especialista do seu lado.',
-    type: 'website',
-    locale: 'pt_BR',
+  "metadataBase": new URL("https://imoveis.morenoechericoni.com.br/"),
+  "title": "Regularização de Imóveis em São Bernardo | Moreno & Chericoni",
+  "description": "Atuação em regularização de imóveis, usucapião, escritura e questões imobiliárias de herança. Moreno & Chericoni em São Bernardo do Campo.",
+  "alternates": {
+    "canonical": "https://imoveis.morenoechericoni.com.br/"
   },
-  robots: 'index, follow',
+  "authors": [
+    {
+      "name": "Moreno & Chericoni Advogados"
+    }
+  ],
+  "openGraph": {
+    "title": "Regularização de Imóveis em São Bernardo | Moreno & Chericoni",
+    "description": "Atuação em regularização de imóveis, usucapião, escritura e questões imobiliárias de herança. Moreno & Chericoni em São Bernardo do Campo.",
+    "url": "https://imoveis.morenoechericoni.com.br/",
+    "siteName": "Moreno & Chericoni Advogados",
+    "locale": "pt_BR",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary",
+    "title": "Regularização de Imóveis em São Bernardo | Moreno & Chericoni",
+    "description": "Atuação em regularização de imóveis, usucapião, escritura e questões imobiliárias de herança. Moreno & Chericoni em São Bernardo do Campo."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
+  },
   icons: {
     icon: [{ url: '/logo.webp' }],
     apple: '/logo.webp',
-  },
+  }
 }
 
 export const viewport: Viewport = {
@@ -43,6 +67,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJTFN3WW" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
         </noscript>
+        <script id="seo-structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://morenoechericoni.com.br/#organization\",\"name\":\"Moreno & Chericoni Advogados\",\"url\":\"https://morenoechericoni.com.br/\"},{\"@type\":\"WebPage\",\"@id\":\"https://imoveis.morenoechericoni.com.br/#webpage\",\"url\":\"https://imoveis.morenoechericoni.com.br/\",\"name\":\"Regularização de Imóveis em São Bernardo | Moreno & Chericoni\",\"description\":\"Atuação em regularização de imóveis, usucapião, escritura e questões imobiliárias de herança. Moreno & Chericoni em São Bernardo do Campo.\",\"inLanguage\":\"pt-BR\",\"publisher\":{\"@id\":\"https://morenoechericoni.com.br/#organization\"}}]}" }} />
         {children}
       </body>
     </html>
